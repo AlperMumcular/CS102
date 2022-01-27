@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20120818-r5686">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Lab06d.java" package="" timestamp="08-Dec-2020 19:48:07">
+        <select from="639" to="639"/>
+        <scroll column="3" row="0"/>
+      </file>
+      <file name="Lab06c.java" package="" timestamp="08-Dec-2020 19:04:02">
+        <select from="639" to="639"/>
+        <scroll column="3" row="0"/>
+      </file>
+      <file name="Lab06b.java" package="" timestamp="08-Dec-2020 19:05:25">
+        <select from="639" to="639"/>
+        <scroll column="3" row="0"/>
+      </file>
+      <file name="Lab06.java" package="" timestamp="08-Dec-2020 19:05:59">
+        <select from="639" to="639"/>
+        <scroll column="3" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
