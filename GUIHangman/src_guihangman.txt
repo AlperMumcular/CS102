@@ -1,0 +1,2 @@
+C:\Users\ALPER\Desktop\lab05\GUIHangman\src\GallowsHangmanView.java
+C:\Users\ALPER\Desktop\lab05\GUIHangman\src\HangmanLetterButtonControls.java
