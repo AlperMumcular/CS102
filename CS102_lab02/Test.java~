@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ * Lab02 f
+ * @author Alper Mumcular
+ * @version 21.10.2020
+ */ 
+public class Test
+{
+   public static void main( String[] args )
+   {
+      Scanner scan = new Scanner( System.in );
+      // PART B. Testing MySimpleURLReader
+      MySimpleURLReader a = new MySimpleURLReader("http://www.cs.bilkent.edu.tr/~ozturk/cs102/scrapethissite.html");
+      System.out.println(a.getURL());
+      System.out.println(a.getName());
+      //System.out.println(a.getPageContents().substring(4));
+      
+      // PART C. Testing MySimpleURLReader getNumberOfCSSLinks() method
+      System.out.println(a.getNumberOfCSSLinks());
+      
+      // PART D. Testing HTMLFilteredReader 
+      HTMLFilteredReader b = new HTMLFilteredReader( "http://www.cs.bilkent.edu.tr/~ozturk/cs102/scrapethissite.html" );
+      System.out.println(b.getPageContents());
+      
+      // PART E. Testing wordSearch class
+      String[] words = new String[] { "Turkey", "Ankara" };
+      wordSearch c = new wordSearch( "http://www.cs.bilkent.edu.tr/~ozturk/cs102/scrapethissite.html", words );
+   }
+
+}

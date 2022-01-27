@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20120818-r5686">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="HTMLFilteredReader.java" package="" timestamp="25-Jun-2021 14:39:28">
+        <select from="739" to="739"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Lab02a.java" package="" timestamp="22-Jun-2021 14:16:28">
+        <select from="739" to="739"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="Test.java" package="" timestamp="22-Oct-2020 22:56:50">
+        <select from="739" to="739"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="MySimpleURLReader.java" package="" timestamp="22-Oct-2020 16:33:58">
+        <select from="739" to="739"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="wordSearch.java" package="" timestamp="22-Oct-2020 16:46:29">
+        <select from="739" to="739"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

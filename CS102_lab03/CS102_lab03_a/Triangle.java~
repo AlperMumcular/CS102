@@ -1,0 +1,52 @@
+/**
+ * A simple Java class!
+ */
+public class Triangle extends Shape
+{
+   // properties
+   int a;
+   int b;
+   int c;
+
+   // constructors
+   public Triangle( int a, int b, int c ) {
+      this.a = a;
+      this.b = b;
+      this.c = c;
+   }
+   
+   // methods
+   public double getArea() {
+      double s;
+      s = (a+b+c) / 2;
+      return Math.sqrt( s * (s-a) * (s-b) * (s-c) );
+   }
+   
+   public double getPerimeter() {
+      return a+b+c;
+   }
+   
+   public int getX() {
+      return this.x;
+   }
+   
+   public int getY() {
+      return this.y;
+   }
+   
+   public void setLocation( int x, int y) {
+      this.x = x;
+      this.y = y;
+   }
+   
+   public boolean contains( int x, int y ) {
+      double area1, area2, area3;
+      double u, r;
+      u = (this.a+this.b+this.c) / 2;
+      r = getArea()/u;
+      if( 1 == 1 ) 
+         return true;
+      else
+         return false;
+   }
+}

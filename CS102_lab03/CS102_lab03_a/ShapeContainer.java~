@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+/**
+ * A simple Java class!
+ */
+public class ShapeContainer 
+{
+   // properties
+   ArrayList<Shape> shapes;
+   double area;
+   double perimeter;
+
+   // constructors
+   public ShapeContainer() {
+      shapes = new ArrayList<Shape>();
+   }
+   
+   // methods
+   public ArrayList<Shape> getShapes() {
+      return shapes;
+   }
+   public void add(Shape s) {
+      shapes.add(s);
+   }
+   public void removeSelectedOnes() {
+      for( int i = 0; i < shapes.size(); i++ ) {
+         if(shapes.get(i).getSelected()) {
+            shapes.remove(i);
+            i--;
+         }
+      }
+   }
+   
+   public double getArea() {
+      for( Shape a: shapes ) {
+         area += a.getArea();
+      }
+      return this.area;
+   }
+   
+   public double getPerimeter() {
+      for( Shape a: shapes ) {
+         perimeter += a.getPerimeter();
+      }
+      return this.perimeter;
+   }
+   
+   public String toString() {
+      String s = "";
+      for( Shape a: shapes ) {
+         s += "Area: " + a.getArea() + " Perimeter: " + a.getPerimeter() + "\n";
+      }
+      return s;
+   }
+   
+}

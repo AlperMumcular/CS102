@@ -1,0 +1,42 @@
+/**
+ * A simple Java class!
+ */
+public class Circle extends Shape 
+{
+   // properties
+   int radius;
+
+   // constructors
+   public Circle( int r ) {
+      this.radius = r;
+   }
+   
+   // methods
+   public double getArea() {
+      return Math.PI*Math.pow(this.radius, 2);
+   }
+   
+   public double getPerimeter() {
+      return 2*Math.PI*this.radius;
+   }
+   
+   public int getX() {
+      return this.x;
+   }
+   
+   public int getY() {
+      return this.y;
+   }
+   
+   public void setLocation( int x, int y) {
+      this.x = x;
+      this.y = y;
+   }
+   
+   public boolean contains( int x, int y ) {
+      if(Math.sqrt( Math.pow(this.x-x, 2) + Math.pow(this.y-y, 2) ) <= this.radius ) 
+         return true;
+      else
+         return false;
+   }
+}

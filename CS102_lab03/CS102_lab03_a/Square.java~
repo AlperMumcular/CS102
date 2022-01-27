@@ -1,0 +1,14 @@
+/**
+ * A simple Java class!
+ */
+public class Square extends Rectangle 
+{
+   // properties
+   
+   // constructors
+   public Square( int x ) {
+      super( x, x);
+   }
+   
+   // methods
+}

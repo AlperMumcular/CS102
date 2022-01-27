@@ -1,0 +1,44 @@
+/**
+ * A simple Java class!
+ */
+public class Rectangle extends Shape
+{
+   // properties
+   int width;
+   int height;
+
+   // constructors
+   public Rectangle( int width, int height ) {
+      this.width = width;
+      this.height = height;
+   }
+   
+   // methods
+   public double getArea() {
+      return this.width*this.height;
+   }
+   
+   public double getPerimeter() {
+      return 2*(this.width*this.height);
+   }
+   
+   public int getX() {
+      return this.x;
+   }
+   
+   public int getY() {
+      return this.y;
+   }
+   
+   public void setLocation( int x, int y) {
+      this.x = x;
+      this.y = y;
+   }
+
+   public boolean contains( int x, int y ) {
+      if((x >= this.x && x <= this.x+this.height) && (y >= this.y && y <= this.y+this.width) ) 
+         return true;
+      else
+         return false;
+   }
+}

@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+/**
+ * SOS Game
+ * @author Alper Mumcular
+ * @version 25.11.2020
+ */ 
+public class SOSGame
+{
+   public static void main( String[] args )
+   {
+      Scanner scan = new Scanner( System.in );
+
+      // constants
+
+      // variables
+      JFrame frame = new JFrame("SOS Game");
+      
+      // program code      
+      int size = Integer.parseInt(JOptionPane.showInputDialog( "Board Size"));
+      String player1 = JOptionPane.showInputDialog("Please enter first player's name:");
+      String player2 = JOptionPane.showInputDialog("Please enter second player's name:");
+      SOS game = new SOS(size);
+      
+      JPanel panel = new JPanel();
+      panel.setLayout( new BorderLayout());
+
+     //panel.add(new SOSGUIPanel(game, player1, player2), BorderLayout.CENTER ); 
+      panel.add(new SOSGUIPanel( game, player1, player2), BorderLayout.CENTER);
+      frame.add(panel); 
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);      
+      frame.setVisible(true);
+      frame.pack();
+      
+      System.out.println( "End." );
+   }
+   
+}

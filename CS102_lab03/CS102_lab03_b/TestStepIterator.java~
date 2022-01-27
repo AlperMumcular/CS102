@@ -1,0 +1,38 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+/**
+ * __program description___ 
+ * @author __your name___
+ * @version __date__
+ */ 
+public class TestStepIterator
+{
+   public static void main( String[] args )
+   {
+      Scanner scan = new Scanner(System.in);
+      
+      // variables
+      IntBag a = new IntBag();
+      int m;
+      Iterator i, j;
+
+      // program code
+      System.out.print("Step Size: ");
+      m = scan.nextInt();
+      
+      for(int i = 1; i <= 20; i++ ) {
+         a.addToEnd(i);
+      }
+      
+      i = a.iteratorStep( step );
+      while ( i.hasNext() ){
+         System.out.println( i.next() );
+         
+         j = a.iteratorStep( step );
+         while ( j.hasNext() ){
+            System.out.println( "- -" + j.next() );
+
+   }
+
+}

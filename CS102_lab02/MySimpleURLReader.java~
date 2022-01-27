@@ -1,0 +1,51 @@
+import cs1.*;
+/**
+ * Lab02 b
+ * @author Alper Mumcular
+ * @version 16.10.2020
+ */ 
+public class MySimpleURLReader extends SimpleURLReader 
+{   
+   String url;
+   public MySimpleURLReader ( String url ) {
+      super(url);
+      this.url = url;
+   }
+   
+   public String getURL() {
+      return this.url;
+   }
+   
+   public String getName() {
+      String name;
+      name = "";
+      for( int i = 0; i < url.length(); i++) {
+         if(url.charAt(i) == '/' )
+            name = "";
+         else
+            name += url.charAt(i);
+      }
+      return name;
+   }
+   
+   public int getNumberOfCSSLinks() {
+      String  content;
+      int countOfCSSLinks;
+      countOfCSSLinks = 0;
+      content = super.getPageContents().substring(4);
+      for(int i = 5; i < content.length(); i++) {
+         if(content.substring(i - 5, i).equals("<link") ) {
+            for(; ; i++) {
+               if(content.substring(i- 4 , i).equals(".css") ) {
+                  countOfCSSLinks++;
+               }
+               else if(content.charAt(i) == '>' )
+                  break;
+            }
+         }
+      }
+      return countOfCSSLinks;
+   }
+   
+
+}
