@@ -1,0 +1,23 @@
+/**
+ * Test class for stack.
+ * 
+ * @author Burak
+ * @version 24/12/2020
+ */
+public class TestLinkedList2 {
+ public static void main(String[] args) {
+  SimpleStackWithQueue stack = new SimpleStackWithQueue();
+
+  System.out.println("This is an empty stack: ");
+  System.out.println(stack);
+
+  System.out.println("Pushing items(1,2,3): ");  stack.push("item 1");
+  stack.push("item 2");  stack.push("item 3");
+  System.out.println(stack);
+
+  System.out.println("\nPopping an item: ");
+  System.out.println("Popped : " + stack.pop());
+  System.out.println("Result of pop:");
+  System.out.println(stack);
+ }
+}

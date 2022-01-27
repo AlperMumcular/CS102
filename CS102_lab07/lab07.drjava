@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20120818-r5686">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="Node.java" package="" timestamp="25-Dec-2020 00:42:31">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestLinkedList2.java" package="" timestamp="25-Dec-2020 00:52:17">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="SimpleLinkedList.java" package="" timestamp="25-Dec-2020 00:41:40">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="SimpleQueue.java" package="" timestamp="25-Dec-2020 00:41:40">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="SimpleStackWithQueue.java" package="" timestamp="25-Dec-2020 00:41:40">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="TestLinkedList.java" package="" timestamp="25-Dec-2020 00:50:04">
+        <select from="223" to="223"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath/>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>
